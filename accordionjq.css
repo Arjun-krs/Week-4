@@ -1,0 +1,28 @@
+body {
+    background: rgb(131, 58, 180);
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+}
+
+h3 {
+    color: red;
+    text-align: center;
+    margin: 10px;
+    padding: 3px;
+    border: 20px;
+    background: rgba(0,0,0,0.5);
+
+}
+
+.context {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    padding: 5px;
+    margin: 10px;
+    /* background: white; */
+}
+
+p {
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+}

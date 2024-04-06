@@ -1,0 +1,84 @@
+body {
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    331deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+}
+h1 {
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  color: wheat;
+  
+}
+
+table {
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.5);
+
+}
+
+td {
+  color: red;
+}
+
+#employee thead th {
+  background-color: #f8f9fa;
+  font-weight: bold;
+}
+
+
+#employee tbody td {
+  padding: 10px;
+}
+
+#employee tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+#employee tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.dataTables_paginate {
+  margin-top: 20px;
+}
+
+.dataTables_paginate .paginate_button {
+  padding: 5px 10px;
+  margin-right: 5px;
+  border: none;
+  background-color: #ffffff;
+  color: red;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.dataTables_length {
+  margin-top: 26px;
+  color: black;
+  font-weight: 500;
+}
+
+.dataTables_filter input[type="search"] {
+  width: 200px;
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 20px;
+}
+.dataTables_filter {
+  color: black;
+  font-weight: 500;
+}
+
+.dataTables_info {
+  color: black;
+  font-weight: 500;
+}
+
+.dataTables_wrapper{
+    margin: 50px;
+    margin-bottom: 10px;
+}

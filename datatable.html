@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Data Table</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css"
+    />
+    <link rel="stylesheet" href="datatable.css" />
+  </head>
+
+  <body>
+    <div class="container mt-3">
+      <table id="employee" class="table">
+        <h1>Employee Data List</h1>
+        <thead>
+          <tr>
+            <th scope="col">S.No</th>
+            <th scope="col">First name</th>
+            <th scope="col">Last name</th>
+            <th scope="col">Domain</th>
+            <th scope="col">Salary</th>
+            <th scope="col">Address</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Praveen</td>
+            <td></td>
+            <td>Sn.Developer</td>
+            <td>7,50,000/-</td>
+            <td>Chennai</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Vijay</td>
+            <td></td>
+            <td>Sn.Developer</td>
+            <td>7,50,000/-</td>
+            <td>Chennai</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Guru</td>
+            <td>Arjun</td>
+            <td>Jr.Developer</td>
+            <td>4,50,000/-</td>
+            <td>Madurai</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Prakash</td>
+            <td>Raj</td>
+            <td>Jr.Developer</td>
+            <td>4,50,000/-</td>
+            <td>Trichy</td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>Joe Exen</td>
+            <td>Aloywin</td>
+            <td>Jr.Developer</td>
+            <td>4,50,000/-</td>
+            <td>Tirunelveli</td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td>Pavithra</td>
+            <td></td>
+            <td>Jr.Developer</td>
+            <td>4,50,000/-</td>
+            <td>Chennai</td>
+          </tr>
+          <tr>
+            <th scope="row">7</th>
+            <td>Prasanth</td>
+            <td></td>
+            <td>Jr.Developer</td>
+            <td>4,50,000/-</td>
+            <td>Chennai</td>
+          </tr>
+          <tr>
+            <th scope="row">8</th>
+            <td>Sai</td>
+            <td>Charan</td>
+            <td>Jr.Developer</td>
+            <td>4,50,000/-</td>
+            <td>Andhra Pradesh</td>
+          </tr>
+          <tr>
+            <th scope="row">9</th>
+            <td>Krishna</td>
+            <td>Raj</td>
+            <td>Jr.Developer</td>
+            <td>4,50,000/-</td>
+            <td>Pondycheri</td>
+          </tr>
+          <tr>
+            <th scope="row">10</th>
+            <td>Sri</td>
+            <td>Ram</td>
+            <td>Jr.Developer</td>
+            <td>4,50,000/-</td>
+            <td>Chennai</td>
+          </tr>
+          <tr>
+            <th scope="row">11</th>
+            <td>Nandhini</td>
+            <td></td>
+            <td>Jr.Developer</td>
+            <td>4,50,000/-</td>
+            <td>Madurai</td>
+          </tr>
+          <tr>
+            <th scope="row">12</th>
+            <td>Sri</td>
+            <td>Mirrah</td>
+            <td>Jr.Developer</td>
+            <td>4,50,000/-</td>
+            <td>Thoothukudi</td>
+          </tr>
+          <tr>
+            <th scope="row">13</th>
+            <td>ranjith</td>
+            <td></td>
+            <td>Jr.Developer</td>
+            <td>4,50,000/-</td>
+            <td>Chennai</td>
+          </tr>
+          <tr>
+            <th scope="row">14</th>
+            <td>Kayal</td>
+            <td>Vizhi</td>
+            <td>Jr.Developer</td>
+            <td>4,50,000/-</td>
+            <td>Chidhambaram</td>
+          </tr>
+          <tr>
+            <th scope="row">15</th>
+            <td>Sudarshan</td>
+            <td></td>
+            <td>Jr.Developer</td>
+            <td>4,50,000/-</td>
+            <td>Thirunelveli</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- table jquery script for paging -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#employee").DataTable({
+          paging: true, // Enable pagination
+          searching: true, // Enable search box
+          ordering: true, // Enable column sorting
+          lengthChange: true, // Enable changing the number of rows displayed per page
+          lengthMenu: [8, 16, 24, 32], // Options for number of rows per page
+        });
+      });
+    </script>
+  </body>
+</html>

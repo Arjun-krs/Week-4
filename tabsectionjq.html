@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="tabsectionjq.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Tab Section</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="tab-box">
+        <button class="tab-btn" data-target="tab1">Home</button>
+        <button class="tab-btn" data-target="tab2">About Us</button>
+        <button class="tab-btn" data-target="tab3">Contact</button>
+        <button class="tab-btn" data-target="tab4">Social Media</button>
+      </div>
+      <div class="content-box">
+        <div class="content" id="tab1">
+          <h2>Home</h2>
+          <p>Coderz Vision Technology</p>
+        </div>
+        <div class="content" id="tab2">
+          <h2>About Us</h2>
+          <p>Software Company</p>
+        </div>
+        <div class="content" id="tab3">
+          <h2>Contact</h2>
+          <p>+91 XXXXXXXXXX</p>
+        </div>
+        <div class="content" id="tab4">
+          <h2>Social Media</h2>
+          <p>Instagram: CoderzVisionTechnology</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".tab-btn").click(function () {
+          var target = $(this).data("target");
+          $(".content").hide();
+          $("#" + target).show();
+        });
+      });
+    </script>
+  </body>
+</html>
